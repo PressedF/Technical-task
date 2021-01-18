@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="content flex">
+        <nav class="content-nav_bar">
+            <ul><li><a href="#">Элемент меню</a></li></ul>
+            <ul><li><a href="#">Элемент меню с наведением</a></li></ul>
+            <ul class="active"><li><a href="#">Еще один элемент у которого очень длинный текст</a></li></ul>
+            <ul><li><a href="#">Еще один элемент</a></li></ul>
+            <ul><li><a href="#">Еще один элемент</a></li></ul>
+        </nav>
+    </div>
+    
+    <script>
+        const d = document;
+        const queryNav = d.querySelectorAll('ul');
+        
+        queryNav.forEach(t => t.addEventListener('mouseenter', event =>
+        {
+           for(let i = 0; i < queryNav.length; i++){
+               queryNav[i].classList.remove('active');
+           }
+           
+           event.target.classList.add('active');
+        }));
+        
+    </script>
+</body>
+</html>

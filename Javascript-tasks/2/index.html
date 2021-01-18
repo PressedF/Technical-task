@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="content flex">
+        <div class="content-main">
+            <div class="content-registration">
+                <h1>Регистрация</h1>
+            </div>
+            
+            <div class="content-inputs">
+                <div class="wrapper">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" 
+                    placeholder="example@site.domain"
+                    autofocus required pattern="\S+@[a-z]+.[a-z]+">
+                </div>
+                
+                <div class="wrapper">
+                    <div>
+                        <label for="pass">Пароль</label>
+                        <input type="password" name="pass"
+                        placeholder="password" required pattern="[\d]+">
+                    </div>
+                    
+                    <div>
+                        <label for="repeat">Повторите пароль</label>
+                        <input type="password" name="repeat"
+                        placeholder="password" required pattern="[\d]+">
+                    </div>
+                </div>
+                
+                <div class="wrapper">
+                    <label for="fio">ФИО</label>
+                    <input type="text" name="fio"
+                    placeholder="Игорев Игорь Игоревич" required pattern="[A-Za-zА-Яа-яЁё]+\s+[A-Za-zА-Яа-яЁё]+\s+[A-Za-zА-Яа-яЁё]+?">
+                </div>
+                
+                <div class="wrapper">
+                    <label for="age">Возраст</label>
+                    <input type="number" name="age"
+                    placeholder="18" required>
+                </div>
+            </div>
+            
+            <div class="content-footer">
+                <button>Отправить</button>
+                <button>Отменить</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
