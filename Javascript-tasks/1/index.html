@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="content flex">
+        <nav class="content-nav_bar">
+            <ul>
+                <li>Элемент меню</li>
+                <li>Элемент меню с наведением</li>
+                <li tabindex="0">Еще один элемент у которого очень длинный текст</a></li>
+                <li>Еще один элемент</li>
+                <li>Еще один элемент</li>
+            </ul>
+        </nav>
+    </div>
+    
+    <script>
+        const d = document;
+        const query = d.querySelector('li:nth-child(2)');
+        
+        query.onclick = () => query.classList.toggle('active');
+    </script>
+</body>
+</html>
