@@ -11,13 +11,26 @@
     <div class="content flex">
         <nav class="content-nav_bar">
             <ul>
-                <li tabindex="0">Элемент меню</li>
-                <li tabindex="0">Элемент меню с наведением</li>
-                <li tabindex="0">Еще один элемент у которого очень длинный текст</li>
-                <li tabindex="0">Еще один элемент</li>
-                <li tabindex="0">Еще один элемент</li>
+                <li>Элемент меню</li>
+                <li>Элемент меню с наведением</li>
+                <li>Еще один элемент у которого очень длинный текст</a></li>
+                <li>Еще один элемент</li>
+                <li>Еще один элемент</li>
             </ul>
         </nav>
     </div>
+    
+    <script>
+        const d = document;
+        const query = d.querySelectorAll('li');
+        
+        query.forEach(t => t.addEventListener('click', (event) => {
+            for(let i = 0; i < query.length; i++)
+                query[i].classList.remove('active');
+                
+            event.target.classList.add('active');
+        }));
+        
+    </script>
 </body>
 </html>
