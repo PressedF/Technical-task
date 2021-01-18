@@ -68,7 +68,7 @@ ul li{
 }
 
 .content-nav_bar ul li:hover,
-.content-nav_bar ul li:focus{
+.content-nav_bar ul li.active{
     background-color: #9c9c9c;
     
     transition: background-color .6s ease-in-out;
