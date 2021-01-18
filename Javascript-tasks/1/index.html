@@ -11,20 +11,13 @@
     <div class="content flex">
         <nav class="content-nav_bar">
             <ul>
-                <li>Элемент меню</li>
-                <li>Элемент меню с наведением</li>
+                <li tabindex="0">Элемент меню</li>
+                <li tabindex="0">Элемент меню с наведением</li>
                 <li tabindex="0">Еще один элемент у которого очень длинный текст</li>
-                <li>Еще один элемент</li>
-                <li>Еще один элемент</li>
+                <li tabindex="0">Еще один элемент</li>
+                <li tabindex="0">Еще один элемент</li>
             </ul>
         </nav>
     </div>
-    
-    <script>
-        const d = document;
-        const query = d.querySelector('li:nth-child(2)');
-        
-        query.onclick = () => query.classList.toggle('active');
-    </script>
 </body>
 </html>
