@@ -62,13 +62,13 @@ ul li{
     color: #000;
 }
 
-.content-nav_bar ul li:nth-child(2){
+.content-nav_bar ul li{
     transition: background-color .6s ease-in-out;
     cursor: pointer;
 }
 
-.content-nav_bar ul li:hover:nth-child(2),
-.content-nav_bar ul li.active{
+.content-nav_bar ul li:hover,
+.content-nav_bar ul li:focus{
     background-color: #9c9c9c;
     
     transition: background-color .6s ease-in-out;
