@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+::before, ::after{
+    box-sizing: border-box;
+}
+
+.Main{
+    padding: 290px 330px 300px 600px;
+    height: 100vh;
+    width: 100vw;
+    
+    overflow: hidden;
+    outline: hidden;
+}
+ 
+.Main-content.none{
+    display: none;
+}
+
+.Main.h1{
+    font-size: 60px;
+    letter-spacing: 8px;
+    
+    display: block;
+    text-align: center;
+}
