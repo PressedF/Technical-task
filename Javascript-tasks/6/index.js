@@ -70,3 +70,78 @@ const toReplaceModel = object => {
 
 console.log(toReplaceModel(model));
 
+/* Alternative solution */
+
+/*
+let model = [
+    {
+        id: 0,
+        title: 'Title text 1',
+        text: 'Some text 1',
+        user: {
+            id: 0,
+            name: 'user 1'
+        }
+    },
+    
+    {
+        id: 1,
+        title: 'Title text 2',
+        text: 'Some text 2',
+        user: {
+            id: 0,
+            name: 'user 1'
+        }
+    },
+];
+*/
+
+/*
+
+    id: 0,
+	name: 'User Name',
+	posts: [
+        {
+		id: 0,
+		title: 'title',
+		text: 'text',
+	  },
+
+
+*/
+
+
+
+/*
+let filter = model.reduce(
+    (hash, {id, title, text, user}) => {
+        
+        let post = Object.create([]);
+        
+        hash[id] = {id, name: user['name'],
+        posts: [
+        {
+            id: user['id'],
+            title: title,
+            text: text
+        }]};
+        
+        return hash;
+    },
+    []
+)
+    
+    
+console.log(filter[0].posts);
+console.log(filter[1].posts) // id = 0
+
+
+// ______________________________
+
+console.log(filter[1]['id']) // id = 1
+
+
+// MISSION COMPLITED
+
+*/
+
