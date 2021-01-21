@@ -141,7 +141,7 @@ console.log(filter[1].posts) // id = 0
 console.log(filter[1]['id']) // id = 1
 
 
-// MISSION COMPLITED
+// MISSION COMPLETE
 
 */
 
